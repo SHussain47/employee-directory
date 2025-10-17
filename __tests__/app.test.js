@@ -2,7 +2,7 @@ import request from "supertest";
 import { onTestFailed, describe, expect, it, test } from "vitest";
 
 import app from "#app";
-import employees from "#db/employees";
+import { employees } from "#db/employees";
 
 describe("Express app", () => {
   it("is defined", () => {

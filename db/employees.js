@@ -1,4 +1,4 @@
-const employees = [
+export const employees = [
   { id: 1, name: "Carolynn McGinlay" },
   { id: 2, name: "Lodovico Filon" },
   { id: 3, name: "Jefferey Wahlberg" },
@@ -11,4 +11,6 @@ const employees = [
   { id: 10, name: "Gwen Grollmann" },
 ];
 
-export default employees;
+export function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
